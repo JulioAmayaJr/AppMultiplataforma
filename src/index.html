@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculadora - Vanilla JS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <div class="pantalla">
+                <div data-valor-previo class="valor-previo"></div>
+                <div data-valor-actual class="valor-actual"></div>
+            </div>
+            <div class="buttons">
+                <table>
+                    <tr>
+                        <td><button class="btn-especial" data-borrar-todo> AC </button></td>
+                        <td><button class="btn-especial" data-borrar> C </button></td>
+                        <td><button class="btn-especial" data-operacion> % </button></td>
+                        <td><button class="btn-operador" data-operacion> ÷ </button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-numero" data-numero> 7 </button></td>
+                        <td><button class="btn-numero" data-numero> 8 </button></td>
+                        <td><button class="btn-numero" data-numero> 9 </button></td>
+                        <td><button class="btn-operador" data-operacion> x </button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-numero" data-numero> 4 </button></td>
+                        <td><button class="btn-numero" data-numero> 5 </button></td>
+                        <td><button class="btn-numero" data-numero> 6 </button></td>
+                        <td><button class="btn-operador" data-operacion> - </button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-numero" data-numero> 1 </button></td>
+                        <td><button class="btn-numero" data-numero> 2 </button></td>
+                        <td><button class="btn-numero" data-numero> 3 </button></td>
+                        <td><button class="btn-operador" data-operacion> + </button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button class="btn-numero" id="cero" data-numero> 0 </button></td>
+                        <td><button class="btn-numero" data-numero> . </button></td>
+                        <td><button class="btn-operador" data-igual> = </button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>

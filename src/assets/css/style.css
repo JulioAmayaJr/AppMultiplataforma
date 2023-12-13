@@ -1,0 +1,95 @@
+*,
+body {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(113, 63, 187),
+    rgba(0, 58, 93, 1)
+  );
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.pantalla {
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  word-wrap: break-word;
+  word-break: break-all;
+  height: 100px;
+  width: 290px; 
+  overflow: hidden; 
+}
+
+.pantalla .valor-previo {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+}
+
+.pantalla .valor-actual {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.calculadora {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #000;
+  background-color: #121212;
+}
+
+.calculadora #display {
+  color: #ffffff;
+}
+
+.calculadora button.btn-numero {
+  background-color: #4e4f50;
+  color: #ffffff;
+}
+
+.calculadora button.btn-operador {
+  background-color: #ca680d;
+  color: #ffffff;
+}
+
+.calculadora button.btn-especial {
+  background-color: #b4b2af;
+  color: #000000;
+}
+
+button {
+  height: 60px;
+  width: 60px;
+  border: 0;
+  border-radius: 30px;
+  margin: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button#cero {
+  width: 130px;
+}
